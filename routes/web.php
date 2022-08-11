@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\Http\Controllers\UserController;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,9 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/register', [UserController::class, 'create']);
-Route::get('/login', [UserController::class, 'index']);
+Route::controller(UserController::class)->group(function () {
+    Route::post('/login', 'index');
+    Route::get('/register', 'index');
+});
+
+

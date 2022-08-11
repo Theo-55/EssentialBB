@@ -11,4 +11,9 @@ class UserController extends Controller
     public function index(Request $request){
         dd($request);
     }
+
+
+    public function create(){
+        dd('made it here');
+    }
 }

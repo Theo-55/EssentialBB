@@ -21,6 +21,9 @@ app.component('example-component', ExampleComponent);
 import Login from './components/auth/Login.vue';
 app.component('login-component', Login);
 
+import Register from './components/auth/Login.vue';
+app.component('register-component', Register);
+
 
 /**
  * The following block of code may be used to automatically register your
