@@ -9,11 +9,8 @@ class UserController extends Controller
     //
 
     public function index(Request $request){
-        dd($request);
+        return response() -> json(['name' => 'trey']);
     }
 
 
-    public function create(){
-        dd('made it here');
-    }
 }

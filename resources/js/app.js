@@ -18,11 +18,9 @@ const app = createApp({});
 import ExampleComponent from './components/ExampleComponent.vue';
 app.component('example-component', ExampleComponent);
 
-import Login from './components/auth/Login.vue';
-app.component('login-component', Login);
+import UserNavigation from './components/User/userNav.vue';
+app.component('user-navigation', UserNavigation);
 
-import Register from './components/auth/Login.vue';
-app.component('register-component', Register);
 
 
 /**

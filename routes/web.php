@@ -21,9 +21,6 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::controller(UserController::class)->group(function () {
-    Route::post('/login', 'index');
-    Route::get('/register', 'index');
-});
+Auth::routes();
 
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

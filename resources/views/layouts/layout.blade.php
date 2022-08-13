@@ -21,28 +21,11 @@
 </head>
 
 <body>
+@extends('nav/nav');
 <div id="app">
 
     @yield('content');
-{{--    @if(request()->path() === 'login')--}}
-{{--        @include('partials.customer-nav')--}}
 
-{{--        @yield('content')--}}
-
-{{--    @else--}}
-{{--        @include('partials.nav')--}}
-{{--        @include('partials.browser-warning')--}}
-{{--        @yield('admin-action-nav')--}}
-{{--        <main class="py-5">--}}
-{{--            <div class="container">--}}
-{{--                <div class="row">--}}
-{{--                    <div class="col-12 col-xl-12 col-lg-12">--}}
-{{--                        @yield('content')--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </main>--}}
-{{--    @endif--}}
 </div>
 </body>
 </html>
