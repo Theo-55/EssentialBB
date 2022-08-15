@@ -5,7 +5,8 @@
  */
 
 import './bootstrap';
-import { createApp } from 'vue';
+// import { createApp } from 'vue';
+import { createApp } from "vue/dist/vue.esm-bundler";
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -21,6 +22,8 @@ app.component('example-component', ExampleComponent);
 import UserNavigation from './components/User/userNav.vue';
 app.component('user-navigation', UserNavigation);
 
+import UserHome from './components/User/index.vue';
+app.component('user-dashboard', UserHome);
 
 
 /**

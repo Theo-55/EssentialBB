@@ -1,3 +1,4 @@
 <div>
-    <user-navigation></user-navigation>
+  <user-navigation />
 </div>
+

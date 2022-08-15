@@ -17,12 +17,11 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 </head>
+
 <body>
-        @extends('nav/nav');
         <div id="app">
-
+            @include('nav.nav');
             @yield('content');
-
         </div>
 </body>
 </html>
